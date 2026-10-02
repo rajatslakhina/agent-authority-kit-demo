@@ -16,7 +16,7 @@ An app that lets agents act for the user has to answer four questions that "the 
 | **Grant pay** to Siri or the model | A consent sheet naming the agent and the scope. Allow → the agent's token is re-issued carrying its old scopes *plus* pay. Deny → nothing is minted and the old token stays. |
 | **Grant pay** to the Desktop MCP client | Refused by policy: a remote client may only read. No prompt is shown. |
 | **Grant read** on the on-device budget model, **Start 8-step task**, then **Revoke model** | The task stops at the next step with `revoked: agent budget-model` — revocation reaches work already in flight. (Started with no grant, it stops at step 1 with `no token`.) |
-| **Kill switch** | Every outstanding token dies, every agent row shows its token struck through and marked revoked (the agent still *holds* it; the broker refuses it), and the revocation generation on screen increments. The next grant starts from a clean slate. |
+| **Kill switch** | Every outstanding token dies, every agent row that holds a token shows it struck through and marked revoked (the agent still *holds* it; the broker refuses it), and the revocation generation on screen increments. The next grant starts from a clean slate. |
 | **Run adversarial suite** | 20 scenarios — 18 attacks (stolen token, stolen token re-delegated, proof replay, scope escalation, delegation widening, revocation during consent, …) each stopped for its *expected* reason, plus 2 baselines that must be allowed. The footer reads “20 of 20 scenarios behaved as expected”. |
 | **Tamper with a copy** (after any grant — the log starts empty) | One audit entry of a copy is edited; the keyed hash chain reports exactly where it broke. |
 
@@ -26,7 +26,7 @@ An app that lets agents act for the user has to answer four questions that "the 
 
 ## Screenshots
 
-_Pending the Simulator run._
+**There are none, and none are mocked up.** This release was never launched on a Simulator (see *Verification*), so there is nothing real to show. The table above describes what the code does, traced through `AuthorityConsoleView` and `AuthorityConsoleModel`, not what was observed on a screen.
 
 ## How to run it
 
@@ -50,7 +50,11 @@ Demo/
 
 ## Verification
 
-_Written after the first CI run reports — see the Actions tab._
+What was actually run, and what was not:
+
+- **CI** ([Actions](https://github.com/rajatslakhina/agent-authority-kit-demo/actions/workflows/ci.yml)), on `macos-15` with Xcode 16.4: `xcodebuild -resolvePackageDependencies` fetched the package from GitHub and resolved **`agent-authority-kit @ 1.0.0`** (plus `swift-crypto` and `swift-asn1`, which the package declares for its Linux build). Then `xcodebuild build -scheme Demo -destination 'generic/platform=iOS Simulator'` reported **BUILD SUCCEEDED**. This proves the remote package resolves and the app compiles against it. It does not prove the app runs.
+- **The library's own tests** (69, in the [library repo](https://github.com/rajatslakhina/agent-authority-kit)) cover the console's view model, `AuthorityConsoleModel`: consent approve, decline and dismiss; grants accumulating; mid-task revocation stopping a job; cancellation; the bounded activity log; and the tamper demonstration. The SwiftUI views themselves have no tests.
+- **Not done: a Simulator run.** Computer-use access to Xcode and Simulator was granted, but the Mac's screen was locked, and macOS blocks every click while it is. All three attempts were refused the same way. **The app has been compiled for the iOS Simulator but never launched on one, and no screenshots exist.**
 
 ## License
 
