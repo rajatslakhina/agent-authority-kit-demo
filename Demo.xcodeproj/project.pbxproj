@@ -1,0 +1,282 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 60;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2449BB3FF05AF6C05EF23249 /* DemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28E8922A171D70D3A0A4129E /* DemoApp.swift */; };
+		E481DE9742CD136CEFA99EA9 /* AgentAuthority in Frameworks */ = {isa = PBXBuildFile; productRef = BA02A30C7F5711630A3E9BFC /* AgentAuthority */; };
+		8EE5FF0A32D804518BF73D90 /* AgentAuthorityUI in Frameworks */ = {isa = PBXBuildFile; productRef = D084C81AD763964C201A737C /* AgentAuthorityUI */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		28E8922A171D70D3A0A4129E /* DemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoApp.swift; sourceTree = "<group>"; };
+		292AC19E827D2844628C780D /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6D6A4D5801E7507272735882 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E481DE9742CD136CEFA99EA9 /* AgentAuthority in Frameworks */,
+				8EE5FF0A32D804518BF73D90 /* AgentAuthorityUI in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		35904A0919A29A20E223F157 = {
+			isa = PBXGroup;
+			children = (
+				6E3F126BBCFA9BB676B4C897 /* Demo */,
+				43EF14E200B85BB9D1532E33 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6E3F126BBCFA9BB676B4C897 /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				28E8922A171D70D3A0A4129E /* DemoApp.swift */,
+			);
+			path = Demo;
+			sourceTree = "<group>";
+		};
+		43EF14E200B85BB9D1532E33 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				292AC19E827D2844628C780D /* Demo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ED81736B0A699B5FE10B3888 /* Demo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 37C7BBDD2D59880168BFDF7E /* Build configuration list for PBXNativeTarget "Demo" */;
+			buildPhases = (
+				F08523D152ACEDE68CB2EC0E /* Sources */,
+				6D6A4D5801E7507272735882 /* Frameworks */,
+				8E47A071CA72625A15938B0B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Demo;
+			packageProductDependencies = (
+				BA02A30C7F5711630A3E9BFC /* AgentAuthority */,
+				D084C81AD763964C201A737C /* AgentAuthorityUI */,
+			);
+			productName = Demo;
+			productReference = 292AC19E827D2844628C780D /* Demo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4F9DB18E021D391468D381FE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					ED81736B0A699B5FE10B3888 = {
+						CreatedOnToolsVersion = 16.0;
+					};
+				};
+			};
+			buildConfigurationList = CFA0540FE29266CA093C9B7A /* Build configuration list for PBXProject "Demo" */;
+			compatibilityVersion = "Xcode 15.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 35904A0919A29A20E223F157;
+			packageReferences = (
+				5F3AA7B1087DAD1A49DA0F18 /* XCRemoteSwiftPackageReference "agent-authority-kit" */,
+			);
+			productRefGroup = 43EF14E200B85BB9D1532E33 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ED81736B0A699B5FE10B3888 /* Demo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8E47A071CA72625A15938B0B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F08523D152ACEDE68CB2EC0E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2449BB3FF05AF6C05EF23249 /* DemoApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		6C5C99A0118FF176B37739A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				SDKROOT = iphoneos;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_TESTABILITY = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		16DED6269FE5D59E05B259D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				SDKROOT = iphoneos;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4F731E47DD53FF07D53A035F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Agent Authority";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rajatlakhina.AgentAuthorityDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		807E9B52297DA0EB96CFC326 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Agent Authority";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rajatlakhina.AgentAuthorityDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CFA0540FE29266CA093C9B7A /* Build configuration list for PBXProject "Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6C5C99A0118FF176B37739A6 /* Debug */,
+				16DED6269FE5D59E05B259D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		37C7BBDD2D59880168BFDF7E /* Build configuration list for PBXNativeTarget "Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4F731E47DD53FF07D53A035F /* Debug */,
+				807E9B52297DA0EB96CFC326 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5F3AA7B1087DAD1A49DA0F18 /* XCRemoteSwiftPackageReference "agent-authority-kit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/rajatslakhina/agent-authority-kit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		BA02A30C7F5711630A3E9BFC /* AgentAuthority */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5F3AA7B1087DAD1A49DA0F18 /* XCRemoteSwiftPackageReference "agent-authority-kit" */;
+			productName = AgentAuthority;
+		};
+		D084C81AD763964C201A737C /* AgentAuthorityUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5F3AA7B1087DAD1A49DA0F18 /* XCRemoteSwiftPackageReference "agent-authority-kit" */;
+			productName = AgentAuthorityUI;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 4F9DB18E021D391468D381FE /* Project object */;
+}
